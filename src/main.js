@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import ElementuI from 'element-ui' // 引入UI
+import ElementuI from 'element-ui' // 引入element组件
+import 'element-ui/lib/theme-chalk/index.css'// 引入样式
 Vue.config.productionTip = false
-Vue.use(ElementuI)
+Vue.use(ElementuI) // 注册element组件
 new Vue({
   router,
   render: h => h(App)
