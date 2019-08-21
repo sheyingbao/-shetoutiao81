@@ -75,7 +75,13 @@ export default {
       this.$refs.loginForms.validate(isOK => {
         if (isOK) {
           //  通过了效验
-          console.log('前端校验成功')
+          this.$axios({
+            method: 'post',
+            url: '/authorizations',
+            data: this.formData // post参数是在data中写入的
+          }).then(result => {
+            console.log(result.data.data)
+          })
         }
       })
     }
