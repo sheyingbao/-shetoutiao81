@@ -19,7 +19,7 @@
         </el-form-item>
         <el-form-item prop="check">
           <!-- checkbox绑定check -->
-          <el-checkbox :checked="false">我已阅读并同意用户协议和隐私条款</el-checkbox>
+          <el-checkbox v-model="formData.check">我已阅读并同意用户协议和隐私条款</el-checkbox>
         </el-form-item>
         <el-form-item>
           <el-button @click="login" type="primary" style="width:100%">登录</el-button>
