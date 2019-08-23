@@ -18,14 +18,14 @@
 </template>
 
 <script>
-import layoutAside from '../../components/home/layout-aside'
-import layoutHeader from '../../components/home/layout-header'
+// import layoutAside from '../../components/home/layout-aside'
+// import layoutHeader from '../../components/home/layout-header'
 export default {
-  components: {
-  // 注册
-    'layout-aside': layoutAside,
-    'layout-header': layoutHeader
-  }
+  // components: {
+  // // 注册
+  //   'layout-aside': layoutAside,
+  //   'layout-header': layoutHeader
+  // }
 }
 </script>
 
