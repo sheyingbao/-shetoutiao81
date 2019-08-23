@@ -8,7 +8,9 @@
 <!-- 嵌套大内容 -->
 <el-container>
 <!-- 头部内容 -->
-<el-header>头部内容</el-header>
+<el-header>
+  <layout-header></layout-header>
+</el-header>
 <!-- 中间区域 -->
 <el-main>中间区域</el-main>
 </el-container>
@@ -17,10 +19,12 @@
 
 <script>
 import layoutAside from '../../components/home/layout-aside'
+import layoutHeader from '../../components/home/layout-header'
 export default {
   components: {
   // 注册
-    'layout-aside': layoutAside
+    'layout-aside': layoutAside,
+    'layout-header': layoutHeader
   }
 }
 </script>
