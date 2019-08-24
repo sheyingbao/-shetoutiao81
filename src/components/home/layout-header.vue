@@ -57,10 +57,11 @@ export default {
     commandAction (command) {
       if (command === 'account') {
         //  账户信息
+        this.$router.push('/home/account') // 跳转到账户信息
       } else if (command === 'git') {
         //  跳转到git地址
         window.location.href = 'https://github.com/sheyingbao/-shetoutiao81'
-      } else{
+      } else {
         // 退出
         // 擦除本项目在浏览器所有前端缓存
         window.localStorage.clear()

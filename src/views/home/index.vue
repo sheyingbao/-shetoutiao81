@@ -12,7 +12,10 @@
   <layout-header></layout-header>
 </el-header>
 <!-- 中间区域 -->
-<el-main>中间区域</el-main>
+<el-main>
+  <!-- 二级路由容器 -->
+  <router-view></router-view>
+</el-main>
 </el-container>
 </el-container>
 </template>
