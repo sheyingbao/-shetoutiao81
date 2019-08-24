@@ -1,7 +1,7 @@
 <template>
   <el-row class="layout-header" type="flex" justify="space-between">
     <!-- display:flex; align-items:center为居中对齐 -->
-    <el-col :span="6" class="left-header">
+    <el-col :span="16" class="left-header">
       <!-- 图片的设置 -->
       <i class="el-icon-s-unfold"></i>
       <span>江苏传智播客教育科技股份有限公司</span>
