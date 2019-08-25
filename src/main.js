@@ -5,7 +5,7 @@ import ElementuI from 'element-ui' // 引入element组件
 import Component from './components/index'// 引入我们自己定义的插件
 import 'element-ui/lib/theme-chalk/index.css'// 引入样式
 import './styles/index.less' // 引文件重置基础样式
-import axios from 'axios' //  引入axios
+import axios from './utils/axios.configss' //  引入自定义的axios
 // 将后台接口的地址给axios的bashURL
 axios.defaults.baseURL = 'http://ttapi.research.itcast.cn/mp/v1_0'
 Vue.prototype.$axios = axios // 把axios插件给了Vue对象的原型属性

@@ -41,12 +41,9 @@ export default {
   //  获取用户信息
     getUserInfo () {
       // 获取用户存储信息 存储信息里有token
-      let userInfo = window.localIStrage.getItem('user-info')
-      let token = userInfo ? JSON.parse(userInfo).token : null // 获取token
+
       this.$axios({
-        url: '/user/profile',
-        //  将header中赋值  后端需要的token身份信息
-        headers: { 'Authoriztion': `Bearer ${token}` }
+        url: '/user/profile'
       }).then(result => {
       //  获取用户的最新个人资料 赋值给data中的数据
         this.user = result.data.data
