@@ -46,7 +46,7 @@ export default {
         url: '/user/profile'
       }).then(result => {
       //  获取用户的最新个人资料 赋值给data中的数据
-        this.user = result.data.data
+        this.user = result.data
       })
     },
     // 点击菜单项会触发的事件
