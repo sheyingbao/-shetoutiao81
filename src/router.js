@@ -24,7 +24,11 @@ export default new Router({
       children: [{
         path: '',
         component: Main// 默认二级路由组件
-      }]
+      }, {
+        path: '/home/comment', // 评论列表组件
+        component: () => import('./views/comment') // 按需加载写法
+      }
+      ]
     }
     // {
     //   path: '/about',
