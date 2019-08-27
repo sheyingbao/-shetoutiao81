@@ -6,7 +6,7 @@ axios.defaults.baseURL = 'http://ttapi.research.itcast.cn/mp/v1_0'
 axios.interceptors.request.use(function (config) {
 // 在发请求请做一些业务处理
 // 进行配置的注入
-  let userInfo = window.localIStrage.getItem('user-info')
+  let userInfo = window.localStorage.getItem('user-info')
   let token = userInfo ? JSON.parse(userInfo).token : null // 获取token
   config.headers.Authorization = `Bearer ${token}`// 直接将token注入到 请求参数中
   return config
@@ -47,6 +47,7 @@ axios.interceptors.response.use(function (response) {
       break
   }
   Message({ message, type: 'warning' })
-  return new Promise()
+  return new Promise(function () {}) // 如果不return   就会抛出异常 控制台会看到错误
+//  返回一个新的promise对象  就意味着  一个新的没有错误的promise返回了 之前的错误终止了
 })
 export default axios

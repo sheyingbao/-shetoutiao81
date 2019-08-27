@@ -68,6 +68,7 @@ export default {
   },
   methods: {
     login () {
+      console.log(1)
       // validate  手动效验表单数据
       // isOK是 当前表单是否通过了校验
       // result 是当前的校验结果
